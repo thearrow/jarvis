@@ -6,7 +6,9 @@ module.exports = {
         path: __dirname,
         filename: "bundle.js"
     },
-    plugins: [new HtmlWebpackPlugin({title: 'Jarvis 1.0'})],
+    plugins: [new HtmlWebpackPlugin({
+      template: 'index.html',
+    })],
     module: {
         loaders: [
             { test: /\.js$/, loader: "babel" }
